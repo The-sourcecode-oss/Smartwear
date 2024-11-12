@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+section header .logo{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+section header .logo span{
+    color: #f9004d;
+}
+
+section header ul{
+    list-style: none;
+}
+
+section header ul li{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+
+section header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+section header ul li a:hover{
+    color: #f9004d;
+}
+
+section header p{
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+section header p:hover{
+    color: white;
+    background: #b36982;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(179,105,130);
+    clip-path: circle(320px at left -230px);
+    z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b36982;
+    clip-path: circle(250px at right 800px);
+    z-index: -1;
+}
+
+section .texts h1{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    color: #6a6666;
+}
+
+section .texts h1 span{
+    color: #b36982;
+}
+
+section .texts p{
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+}
+
+section .background_image img{
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+}
+
+section .btn{
+    position: relative;
+    top: 77%;
+    left: 38px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+section .btn .read{
+    background: #b36982;
+    color: white;
+    cursor: pointer;
+}
+
+section .btn p{
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #b36982;
+    cursor: pointer;
+}
+
+
+
+
+.about{
+    width: 100%;
+    height: 240vh;
+    padding: 50px;
+}
+
+.about .box{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .box .card{
+    width: 170px;
+    height: auto;
+    padding: 5px 10px;
+    margin: 0 15px;
+    background: gainsboro;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.about .box .card:hover{
+    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.about .box .card img{
+    width: 150px;
+}
+
+.about hr{
+    height: 2px;
+    background: #d98ca5;
+    border-radius: 5px;
+    margin: 30px 110px;
+}
+
+.about .Clothes h1{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.about .Clothes p{
+    text-align: center;
+    margin: 35px 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.about .clothes_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.about .clothes_box .clothes_card{
+    background: #9d9d9d;
+    width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .clothes_box .clothes_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.about .Clothes .clothes_box img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .Clothes .clothes_box img:hover{
+    transform: scale(1.1);
+}
+
+.about .clothes_box .clothes_card h1{
+    font-size: 35px;
+    color: gainsboro;
+    margin: 15px 0;
+}
+
+.about .clothes_box .clothes_card p{
+    color: white;
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.about .clothes_box .clothes_card .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #f9004d;
+}
+
+.about .shoes h1{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.about .shoes p{
+    text-align: center;
+    margin: 35px 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.about .shoes_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.about .shoes_box .SHOES_card{
+    background: #9d9d9d;
+    width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .shoes_box .SHOES_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.about .shoes .shoes_box img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .shoes .shoes_box img:hover{
+    transform: scale(1.1);
+}
+
+.about .shoes_box .shoes_card h1{
+    font-size: 35px;
+    color: gainsboro;
+    margin: 15px 0;
+}
+
+.about .shoes_box .shoes_card p{
+    color: white;
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.about .shoes_box .shoes_card .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #f9004d;
+}
+
+.footer{
+    background: #24262b;
+    padding: 50px;
+}
+
+.footer .main{
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer_col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer_col ul li{
+    margin-bottom: 20px;
+}
+
+.footer_col ul li a{
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.footer_col .social img{
+    width: 20px;
+    margin: 5px;
+}
+/* General Styles (Existing styles you might already have) */
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Circle Styles */
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.circles {
+    /* Additional styles for circles can go here */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* ------------------ News Page Styles ------------------ */
+
+.news {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.news h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between news items */
+}
+
+.news-item {
+    background-color: #f9f9f9; /* Light background for news items */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow effect on hover */
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.news-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+/* ------------------ Contact Page Styles ------------------ */
+
+.contact {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+.contact label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* ------------------ About Page Styles ------------------ */
+
+.about {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6; /* Better readability */
+}
+
+.about .team {
+    display: flex;
+    flex-wrap: wrap; /* Allows team members to wrap to the next line */
+    gap: 20px; /* Space between team member items */
+    justify-content: center; /* Center team members */
+}
+
+.about .team-member {
+    background-color: #f9f9f9; /* Light background for team members */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 200px; /* Responsive flex item */
+    max-width: 300px; /* Max width for team members */
+}
+/* Additional styling for Login and Sign-Up links in the header */
+header ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333; /* Adjust color if needed */
+}
+
+header ul li a:hover {
+    color: #007bff; /* Change on hover if needed */
+}
+/* General form container styling */
+.sign-container, .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.signin-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Text labels for input fields */
+.sign-text {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Input fields styling */
+.sign-text-area, .sign-name {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.sign-text-area:focus, .sign-name:focus {
+    border-color: #007bff;
+}
+
+/* Button styling for log in and create account buttons */
+.log-in-btn, .create-acc-btn a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.log-in-btn:hover, .create-acc-btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for the 'Forgot Password' link */
+.forgot {
+    font-size: 12px;
+    color: #007bff;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* HR styling to separate sections in the form */
+hr {
+    width: 80%;
+    margin: 1.5rem 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* No account text */
+.no-acc, .member-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Policy text styling */
+.policy {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.policy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.policy a:hover {
+    text-decoration: underline;
+}
+
+/* Main header for signup page link */
+.main-head {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+/* Center-align elements and adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .sign-container, .container {
+        width: 90%;
+        padding: 1rem;
+    }
+    .sign-text-area, .sign-name, .log-in-btn, .create-acc-btn a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
